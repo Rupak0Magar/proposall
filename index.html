@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Marry Me?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6e6;
+            font-family: 'Arial', sans-serif;
+            flex-direction: column;
+        }
+        .name {
+            font-size: 24px;
+            color: #ff6666;
+            margin-bottom: 20px;
+        }
+        .heart {
+            position: relative;
+            width: 200px;
+            height: 180px;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 160px;
+            border-radius: 100px 100px 0 0;
+            background-color: #ff6666;
+        }
+        .heart::before {
+            left: 100px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="name">[I Love You Ayula]</div>
+    <div class="heart"></div>
+</body>
+</html>
